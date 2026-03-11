@@ -4,26 +4,25 @@ const grid = document.getElementById("grid");
 
 export function renderGrid(){
 
-grid.innerHTML = "";
+    grid.innerHTML = "";
 
-for(let y=0;y<SIZE;y++){
-for(let x=0;x<SIZE;x++){
+    for(let y = 0; y < SIZE; y++){
+        for(let x = 0; x < SIZE; x++){
 
-const cell = document.createElement("div");
+            const cell = document.createElement("div");
 
-cell.classList.add("cell");
-cell.classList.add(mapData[y][x]);
+            cell.classList.add("cell");
+            cell.classList.add(mapData[y][x]);
 
-cell.dataset.x = x;
-cell.dataset.y = y;
+            cell.dataset.x = x;
+            cell.dataset.y = y;
 
-grid.appendChild(cell);
+            grid.appendChild(cell);
+        }
+    }
 
 }
-}
 
-}
-
-export function getGridElement(){
-return grid;
+export function getGrid(){
+    return grid;
 }

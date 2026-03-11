@@ -4,18 +4,17 @@ export let mapData = [];
 
 export function createEmptyMap(){
 
-mapData = [];
+    mapData = [];
 
-for(let y=0;y<SIZE;y++){
+    for(let y = 0; y < SIZE; y++){
 
-let row = [];
+        let row = [];
 
-for(let x=0;x<SIZE;x++){
-row.push("grass");
-}
+        for(let x = 0; x < SIZE; x++){
+            row.push("grass");
+        }
 
-mapData.push(row);
-
-}
+        mapData.push(row);
+    }
 
 }
